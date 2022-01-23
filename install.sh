@@ -157,21 +157,6 @@ start_write_config() {
     fi
     supervisorctl reload
     echo "安装完成...守护模式无日志，需要日志的请以nohup ./minerProxy &方式运行"
-    echo
-    echo "以下配置文件：/etc/m1nerpr0xy/config.yml"
-    echo
-    echo "[*---------]"
-    sleep 1
-    echo "[**--------]"
-    sleep 1
-    echo "[***-------]"
-    sleep 1
-    echo "[****------]"
-    sleep 1
-    echo "[*****-----]"
-    sleep 1
-    echo "[******----]"
-    echo
     echo "----------------------------------------------------------------"
 }
 
