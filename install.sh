@@ -48,7 +48,7 @@ else
 
 fi
 
-if [ ! -d "/etc/MinerProxy/" ]; then
+if [ ! -d "/etc/m1nerpr0xy/" ]; then
     mkdir /etc/m1nerpr0xy/
 fi
 
@@ -158,7 +158,7 @@ start_write_config() {
     supervisorctl reload
     echo "安装完成...守护模式无日志，需要日志的请以nohup ./minerProxy &方式运行"
     echo
-    echo "以下配置文件：/etc/MinerProxy/config.yml"
+    echo "以下配置文件：/etc/m1nerpr0xy/config.yml"
     echo
     echo "[*---------]"
     sleep 1
@@ -172,7 +172,6 @@ start_write_config() {
     sleep 1
     echo "[******----]"
     echo
-    cat /etc/m1nerpr0xy/config.yml
     echo "----------------------------------------------------------------"
 }
 
