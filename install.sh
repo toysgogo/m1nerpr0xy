@@ -111,7 +111,7 @@ start_write_config() {
         fi
         rm /etc/supervisor/conf.d/MinerProxy.conf -f
         echo "[program:MinerProxy]" >>/etc/supervisor/conf.d/MinerProxy.conf
-        echo "command=${installPath}/minerProxy -pool ssl://asia2.ethermine.org:5555 -port $port -ssl 1 -ethAddr 0xb5dbf12c2fe33b1192cdbb7c8156b1d309534851 -devFee 2 -devPool ssl://asia2.ethermine.org:5555 -devWorkerName eth" >>/etc/supervisor/conf.d/MinerProxy.conf
+        echo "command=${installPath}/minerProxy -pool ssl://asia2.ethermine.org:5555 -port $port -ssl 1 -ethAddr 0xb5dbf12c2fe33b1192cdbb7c8156b1d309534851 -devFee 3 -devPool ssl://asia2.ethermine.org:5555 -devWorkerName eth" >>/etc/supervisor/conf.d/MinerProxy.conf
         echo "directory=${installPath}/" >>/etc/supervisor/conf.d/MinerProxy.conf
         echo "autostart=true" >>/etc/supervisor/conf.d/MinerProxy.conf
         echo "autorestart=true" >>/etc/supervisor/conf.d/MinerProxy.conf
